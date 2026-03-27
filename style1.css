@@ -1,0 +1,421 @@
+.hero {
+    position: relative;
+    background-color: #000;
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.logo img {
+    width: 90%;
+    max-width: none;
+    height: auto;
+    display: block;
+    margin: 0
+     auto;
+
+    filter: invert(1) drop-shadow(0 0 10px rgba(255,255,255,0.5));
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fcfafa;
+}
+
+.catch {
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    
+
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); 
+}
+
+.sub {
+    font-size: 12px;
+    letter-spacing: 6px;
+    margin-top: 20px;
+    opacity: 0.6;
+}
+
+.hero,
+.artist-photo,
+.schedule,
+.news,
+.members,
+.sns {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.hero h1 {
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin: 0.7;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 15px 35px;
+
+    background: #fcfafa;
+    color: #000;
+
+    border-radius: 30px;
+    text-decoration: none;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: scale(1.1);
+    background: #ddd;
+}
+
+.artist-photo {
+    background: #000;
+    padding: 0
+}
+
+.artist-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: 'zen kaku gothic new', sans-serif;
+
+    margin: 0;
+    font-family: sans-serif;
+    background: #111;
+    color: white;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url(images/reverbrefrain_logo_01.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+
+    filter: invert(1);
+    opacity: 0.08;
+
+    z-index: -1;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.schedule {
+    text-align: center;
+    margin: 60px 0;
+  }
+  
+  .schedule-btn {
+    display: inline-block;
+    padding: 15px 30px;
+  
+    background: #fff;
+    color: #000;
+  
+    text-decoration: none;
+    border-radius: 30px;
+  
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .schedule-btn:hover {
+    background: #ddd;
+    transform: scale(1.05);
+  }
+
+.members {
+    text-align: center;
+}
+
+.member-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.member {
+    width: 200px;
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.member p {
+    margin-top: 10px;
+}
+
+.member-sns {
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sns-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fcfafa;
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.sns-icon:hover {
+    transform: scale(1.2);
+}
+
+iframe {
+    width: 90%;
+    max-width: 600px;
+    height: 315px;
+}
+
+.sns-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-size: 36px;
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50% ;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fcfafa;
+    text-decoration: none;
+
+    box-shadow:
+    0 6px 15px rgba(0,0,0,0.6),
+    0 0 10px rgba(255, 255, 255, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+.twitter {
+    background: #000;
+}
+
+.tiktok {
+    background: #000;
+}
+
+.tiktok i {
+    color: white;
+    text-shadow:
+      -2px 0 #25f4ee,
+       2px 0 #fe2c55;
+  }
+
+.YouTube {
+    background: #ff0000;
+}
+
+.instagram {
+    background: linear-gradient(
+        45deg,
+        #f9ce34,
+        #ee2a7b,
+        #6228d7
+
+    );
+}
+
+.btn:hover {
+    transform: translateY(-6px) scale(1.1);
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,0.8),
+    0 0 20px rgba(255, 255, 255, 0.35);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow:
+    0 3px 8px rgba(0,0,0,0.6);
+}
+
+.btn i {
+    font-size: 28px;
+    width: 1em;
+    text-align: center;
+}
+
+.fa-x-twitter {
+    transform: translateX(1px);
+}
+
+.fa-tiktok {
+    transform: translateX(1px);
+}
+.sns i {
+    font-size: 30px;
+}
+
+
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+  }
+  
+  .contact h2 {
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+  }
+  
+  .contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    font-size: 10px;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+  }
+  
+  .contact textarea {
+    height: 100px;
+  }
+  
+  .contact button {
+    padding: 10px;
+    font-size: 14px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  .contact button:hover {
+    background: #ddd;
+  }
+
+  .contact h2 {
+    font-family: 'Noto Sans JP';
+
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+
+    position: relative;
+  }
+
+  .contact h2::before,
+  .contact h2::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: #888;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+
+  .footer {
+    background: rgba(10,20,40,0.7);
+    padding: 20pz 10px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #ccc;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(8px);
+
+    opacity: 0.8;
+
+
+  }
+
+  .video-wrap {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .video-wrap iframe{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+  }
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
+  .footer p {
+    margin: 4px;
+  }
