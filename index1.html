@@ -11,12 +11,12 @@
 
 <body>
     <script>
-        const password="ripple" ; //akanengo
+        const password="akanengo" ;
         
-        let input = prompt("パスワードを入力してください");
+        const input = prompt("パスワードを入力してください");
 
         if (input !== password){
-            document.body.innerHTML = "<h1>閲覧できません</h1>";
+            document.body.style.display = "none";
         }
     </script>
     <header class="hero">
